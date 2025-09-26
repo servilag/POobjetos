@@ -1,4 +1,5 @@
 package gittest.Customers;
+import gittest.Validate;
 
 public class Person {
     private String name;
@@ -11,9 +12,11 @@ public class Person {
         this.setAge(age);
     }
     protected final void setName(String name){
+        Validate.ValidateString(name, "Peson name");
         this.name=name;
     }
     protected final void setAge(int age){
+        Validate.ValidateINT(age, "Age");
         this.age=age;
     }
     protected String getName(){

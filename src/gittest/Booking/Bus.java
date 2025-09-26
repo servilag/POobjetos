@@ -1,4 +1,5 @@
 package gittest.Booking;
+import gittest.Validate;
 
 public class Bus extends TransportService{
     private String BusCompany;
@@ -11,10 +12,12 @@ public class Bus extends TransportService{
         this.setBusCompany(BusCompany);
         this.setBoardingPoint(BoardingPoint);
     }
-    public void setBusCompany(String SeatType){
-        this.BusCompany=SeatType;
+    public void setBusCompany(String BusCompany){
+        Validate.ValidateString(BusCompany, "BusCompany");
+        this.BusCompany=BusCompany;
     }
     public void setBoardingPoint(String BoardingPoint){
+        Validate.ValidateString(BusCompany, "Bus Company");
         this.BoardingPoint=BoardingPoint;
     }
     public String getBusCompany(){

@@ -1,4 +1,5 @@
 package gittest.Booking;
+import gittest.Validate;
 
 public class Train extends TransportService {
     private String SeatType;
@@ -12,9 +13,11 @@ public class Train extends TransportService {
         this.setWagonNumber(WagonNumber);
     }
     public void setSeatType(String SeatType){
+        Validate.ValidateString(SeatType, "SeatType");
         this.SeatType=SeatType;
     }
-    public void setWagonNumber(int WagonNumber){
+    public void setWagonNumber(int WagonNumber){ 
+        Validate.ValidateINT(WagonNumber,"Wagon number");
         this.WagonNumber=WagonNumber;
     }
     public String getSeatType(){
