@@ -1,5 +1,5 @@
 package gittest.Customers;
-
+import gittest.Validate;
 import gittest.Booking.TransportService;
 
 public class Passenger extends Person{
@@ -13,6 +13,7 @@ public class Passenger extends Person{
     }
     
     public final void setPassportNumber(String passportNumber){
+        Validate.ValidateSTRNUM(passportNumber, "passport Number");
         this.passportNumber = passportNumber;
     }
     
