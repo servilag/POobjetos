@@ -14,7 +14,7 @@ public class Passenger extends Person{
     
     public final void setPassportNumber(String passportNumber){
         this.passportNumber = passportNumber;
-    }a
+    }
     
     public String getpassportNumber(){
         return this.passportNumber;
