@@ -53,7 +53,7 @@ public class TransportService {
                 + "\nPrice: " + this.getPrice();
                 
         return str;
-    }//hola
+    }
     
     public abstract String getServiceInformation();
     public abstract String getLuggageInformation();
